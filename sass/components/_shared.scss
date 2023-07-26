@@ -1,0 +1,29 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    color: $mainTextColor;
+    background-color: $mainBackgroundColor;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    @media screen and (min-width: 375px) {
+        width: 375px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
