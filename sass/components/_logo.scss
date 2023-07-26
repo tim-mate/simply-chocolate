@@ -1,0 +1,22 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.42px;
+
+    color: inherit;
+}
+
+.logo__accent {
+    display: inline-block;
+    margin-right: 4px;
+
+    font-style: italic;
+}
+
+.logo__icon {
+    margin-left: 4px;
+}
