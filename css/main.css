@@ -95,6 +95,20 @@ address {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -224,4 +238,39 @@ address {
 .interaction__scroll:focus .scroll__icon {
   fill: #FFFFFF;
   background-color: #FD9222;
+}
+
+.features {
+  background-color: #1E1823;
+}
+.features .container {
+  padding: 20px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.features__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.features__desc {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  color: rgba(255, 255, 255, 0.7);
 }/*# sourceMappingURL=main.css.map */
