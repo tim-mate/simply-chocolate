@@ -1,0 +1,123 @@
+.hero {
+    background-color: #888;
+    .container {
+        padding: 395px 40px 92px;
+         
+    }
+}
+
+.hero__title {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+
+    color: $secondaryTextColor;
+}
+
+.interaction {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 32px;
+}
+
+.interaction__buy {
+    width: 120px;
+    height: 41px;
+
+    font-size: 14px;
+    font-weight: 600;
+    
+    border-radius: 100px;
+    border: transparent;
+    color: $secondaryTextColor;
+    background-color: $accentColor;
+
+    transition: color 250ms $timingFunction, background-color 250ms $timingFunction;
+}
+
+.interaction__buy:hover,
+.interaction__buy:focus {
+    color: $accentColor;
+    background-color: $interactionColor;
+}
+
+.interaction__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 159px;
+    height: 41px;
+
+    font-size: 14px;
+    font-weight: 600;
+        
+    color: $secondaryTextColor;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #FFFFFF;
+
+    transition: color 250ms $timingFunction, 
+                background-color 250ms $timingFunction, 
+                border-color 250ms $timingFunction;
+}
+
+.interaction__more:hover,
+.interaction__more:focus {
+    color: $accentColor;
+    background-color: $elementBackgroundColor;
+    border-color: $accentColor;
+}
+
+.interaction__scroll {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 134px;
+    padding: 5px 0 10px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.36px; 
+
+    border-radius: 10px;
+    color: $secondaryTextColor;
+    background-color: transparent;
+
+    transition: color 250ms $timingFunction,
+                background-color 250ms $timingFunction,
+}
+
+.scroll__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+
+    background-color: $elementBackgroundColor;
+    border-radius: 50%;
+    fill: $accentColor;
+
+    transition: background-color 250ms $timingFunction,
+                fill 250ms $timingFunction;
+    
+}
+
+.interaction__scroll:hover,
+.interaction__scroll:focus {
+    color: $accentColor;
+    background-color: $elementBackgroundColor;
+    
+    .scroll__icon {
+        fill: #FFFFFF;
+        background-color: $accentColor;
+    }
+}
+
+

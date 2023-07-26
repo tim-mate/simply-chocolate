@@ -33,28 +33,30 @@
     <!-- Main -->
     <main>
         <!-- Hero -->
-        <section>
+        <section class="hero">
             <div class="container">
-                <h1>
+                <h1 class="hero__title">
                     Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-                </h1>
-                
-                <ul>
+                </h1>   
+
+                <ul class="interaction">
                     <li>
-                        <button>Buy now</button>
+                        <button class="interaction__buy">Buy now</button>
                     </li>
-                
+
                     <li>
-                        <button>How it’s made</button>
+                        <a href="#production" class="interaction__more">How it’s made</a>
                     </li>
-                
+
                     <li>
-                        <button>
+                        <a href="#footer" class="interaction__scroll">
                             scroll down
-                            <svg width="16px" height="16px">
-                                <use href="./images/icons.svg#down-16"></use>
-                            </svg>
-                        </button>
+                            <div class="scroll__icon">
+                                <svg width="16px" height="16px">
+                                    <use href="./images/icons.svg#down-16"></use>
+                                </svg>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -267,7 +269,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <h2>Chocolate a delicious cure for a bad day</h2>
             
