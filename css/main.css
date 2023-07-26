@@ -114,4 +114,10 @@ address {
 
 .logo__icon {
   margin-left: 4px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
