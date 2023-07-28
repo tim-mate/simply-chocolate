@@ -202,29 +202,68 @@
         </section>
 
         <!-- Products -->
-        <section id="products">
+        <section id="products" class="products">
             <div class="container">
-                <h2>Our products</h2>
-                <ul>
-                    <li>
-                        <article><img src="./images/product1-230.jpg" alt="First product">
-                            <h3>Orange</h3>
-                            <p>Dark chocolate</p>
-                            <span>45 UAH</span>
+                <h2 class="products__title">Our <span class="title__accent">products</span></h2>
+                <ul class="products__list">
+                    <li class="product">
+                        <article>
+                            <img src="./images/product1-230.jpg" alt="First product" class="product__image">
+                            <h3 class="product__name">Orange</h3>
+                            <p class="product__desc">Dark chocolate</p>
+                            <span class="product__price">45 UAH</span>
                         </article>
                     </li>
                 </ul>
                 
-                <form>
-                    <input type="radio" name="product" value="first" checked />
-                    <input type="radio" name="product" value="second" />
-                    <input type="radio" name="product" value="third" />
-                    <input type="radio" name="product" value="fourth" />
-                    <input type="radio" name="product" value="fifth" />
-                    <input type="radio" name="product" value="sixth" />
-                    <input type="radio" name="product" value="seventh" />
-                    <input type="radio" name="product" value="eighth" />
-                    <input type="radio" name="product" value="ninth" />
+                <form class="products__radio">
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="first" class="radio__btn" checked/>
+                        <span class="radio__bullet"></span>
+                    </div>
+                    
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="second" class="radio__btn" />
+                        <span class="radio__bullet"></span>
+                    </div>
+                    
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="third" class="radio__btn" />
+                        <span class="radio__bullet"></span>
+                    </div>
+                    
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="fourth" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="fifth" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="sixth" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="seventh" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="eighth" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
+
+                    <div class="radio__wrap">
+                        <input type="radio" name="product" value="ninth" class="radio__btn"/>
+                        <span class="radio__bullet"></span>
+                    </div>
                 </form>
             </div>
         </section>
