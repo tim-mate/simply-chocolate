@@ -42,6 +42,11 @@ address {
     overflow: hidden;
 }
 
+button:hover,
+input:hover {
+    cursor: pointer;
+}
+
 .title__accent {
     display: inline;
     color: $accentColor;
