@@ -163,11 +163,13 @@ input:hover {
   stroke: #111111;
 }
 
-.hero {
-  background-color: #888;
-}
 .hero .container {
-  padding: 395px 40px 92px;
+  padding: 395px 20px 20px;
+  background-image: url("../../images/hero-335.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
 }
 
 .hero__title {
