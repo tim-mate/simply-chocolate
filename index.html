@@ -22,8 +22,8 @@
                 </svg>
             </a>
             
-            <button>
-                <svg width="28px" height="28px">
+            <button class=" js-open-menu mobile-menu__open">
+                <svg width="28px" height="28px" class="open__icon">
                     <use href="./images/icons.svg#menu-28"></use>
                 </svg>
             </button>
@@ -411,5 +411,63 @@
             </nav>
         </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__close js-close-menu">
+            <svg width="28px" height="28px" class="close__icon">
+                <use href="./images/icons.svg#close-28"></use>
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home">Home</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#production">How it’s made?</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#products">Our products</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#popular">Top sellers</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#reviews">Chocolate is loved</a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="socials">
+            <li class="socials__item">
+                <a href="">
+                    <svg width="22px" height="22px" class="socials__icon">
+                        <use href="./images/icons.svg#instagram-22"></use>
+                    </svg>
+                </a>
+            </li>
+        
+            <li class="socials__item">
+                <a href="">
+                    <svg width="22px" height="22px" class="socials__icon">
+                        <use href="./images/twitter.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
+

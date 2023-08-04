@@ -1,0 +1,60 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+
+    width: 59vw;
+    height: 100vh;
+    padding: 20px;
+
+    transition: transform 250ms $timingFunction;
+    background-color: $secondaryBackgroundColor;
+
+    .nav {
+        position: absolute;
+        top: 136px;
+        left: 50px;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 20px;
+
+        gap: 18px;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu__close {
+    position: absolute;
+    right: 20px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+
+    border: 0px;
+    background-color: inherit;
+}
+
+.close__icon {
+    stroke: $elementBackgroundColor;
+    transition: stroke 250ms $timingFunction;
+}
+
+.close__icon:hover,
+.close__icon:focus {
+    stroke: $accentColor;
+}
+
