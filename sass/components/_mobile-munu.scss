@@ -17,8 +17,8 @@
         left: 50px;
     }
 
-    .nav__item:not(:last-child) {
-        margin-bottom: 24px;
+    .nav__list {
+        gap: 24px;
     }
 
     .socials {

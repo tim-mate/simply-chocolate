@@ -51,6 +51,7 @@
     color: $descTextColor;
 }
 
+
 .product__price {
     display: flex;
     justify-content: center;
@@ -71,39 +72,36 @@
 .products__radio {
     display: flex;
     gap: 13px;
-    width: 236px;
-    height: 13px;
     margin: 0 auto;
+    width: 236px;
 }
 
 .radio__wrap {
-    position: relative;
-    display: flex;
+    
 }
 
 .radio__btn {
     margin: 0;
-    transition: transform 250ms $timingFunction;
+    appearance: none;
+    position: absolute;
 }
 
 .radio__bullet {
-    position: absolute;
-
-    width: 13px;
+    width: 13px;    
     height: 13px;
 
     pointer-events: none;
-    border-radius: 6.5px;
+    border-radius: 50%;
     background-color: rgba(17, 17, 17, 0.10);
-    
-    transition: transform 250ms $timingFunction;
+
+    transition: border-radius 250ms $timingFunction,
+                background-color 250ms $timingFunction;
 }
 
-.radio__btn:checked {
+.radio__btn:checked + .radio__bullet {
     width: 28px;
 
-    & + .radio__bullet {
-        width: 100%;
-        background-color: $accentColor;
-    }
+    background-color: $accentColor;
+    border-radius: 6.5px;
 }
+

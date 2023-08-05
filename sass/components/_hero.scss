@@ -1,14 +1,36 @@
 .hero {
+    padding-top: 0;
+    padding-bottom: 72px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    max-width: 1200px;
+    
+    @media screen and (min-width: 375px) {
+        width: 375px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 
     .container {
         padding: 395px 20px 20px;
+        margin: 0;
+        width: 100%;
         
         background-image: url('../../images/hero-335.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
         
-        border-radius: 20px;
+        border-radius: 25px;
     }
 }
 

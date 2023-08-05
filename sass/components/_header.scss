@@ -4,17 +4,23 @@
         justify-content: space-between;
         align-items: center;
 
-        padding: 20px 20px 14px;
+        height: 62px;
+        padding: 0 20px;
+
+        @media screen and (min-width: 768px) {
+            height: 80px;
+            padding: 0 32px;
+        }
     }
 }
+
 
 .mobile-menu__open {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 28px;
-    height: 28px;
+    
     margin: 0;
     padding: 0;
 
@@ -26,4 +32,52 @@
     stroke: $mainTextColor;
 }
 
+.mobile-menu__open--28 {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__open--32 {
+    @media screen and (max-width: 767px), screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.desktop-menu {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    
+    .nav {
+        margin-right: 138px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .nav__item {
+        display: flex;
+        align-items: center;
+        color: $mainTextColor;
+        margin-bottom: 0;
+    }
+       
+
+    .nav__link {
+        padding: 32px 0;
+    }
+
+    .socials__icon {
+        stroke: black;
+        fill: white;
+        
+    }
+}
 

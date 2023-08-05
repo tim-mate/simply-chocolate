@@ -101,6 +101,12 @@
     letter-spacing: -0.28px; 
 }
 
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .nav__item {
     color: $secondaryTextColor;
     transition: color 250ms $timingFunction;
@@ -109,8 +115,4 @@
 .nav__item:hover,
 .nav__item:focus {
     color: $accentColor;
-}
-
-.nav__item:not(:last-child) {
-    margin-bottom: 18px;
 }

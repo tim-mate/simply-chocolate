@@ -8,6 +8,12 @@
     letter-spacing: -0.42px;
 
     color: inherit;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: -0.54px;
+    }
 }
 
 .logo__accent {
@@ -19,4 +25,16 @@
 
 .logo__icon {
     margin-left: 4px;
+}
+
+.logo__icon--21 {
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.logo__icon--24 {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }

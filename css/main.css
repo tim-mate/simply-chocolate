@@ -129,6 +129,13 @@ input:hover {
   letter-spacing: -0.42px;
   color: inherit;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.54px;
+  }
+}
 
 .logo__accent {
   display: inline-block;
@@ -140,19 +147,36 @@ input:hover {
   margin-left: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo__icon--21 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo__icon--24 {
+    display: none;
+  }
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 14px;
+  height: 62px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    height: 80px;
+    padding: 0 32px;
+  }
 }
 
 .mobile-menu__open {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
   margin: 0;
   padding: 0;
   border: 0px;
@@ -163,13 +187,82 @@ input:hover {
   stroke: #111111;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu__open--28 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
+  .mobile-menu__open--32 {
+    display: none;
+  }
+}
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+.desktop-menu .nav {
+  margin-right: 138px;
+}
+.desktop-menu .nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.desktop-menu .nav__item {
+  display: flex;
+  align-items: center;
+  color: #111111;
+  margin-bottom: 0;
+}
+.desktop-menu .nav__link {
+  padding: 32px 0;
+}
+.desktop-menu .socials__icon {
+  stroke: black;
+  fill: white;
+}
+
+.hero {
+  padding-top: 0;
+  padding-bottom: 72px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1200px;
+}
+@media screen and (min-width: 375px) {
+  .hero {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
+}
 .hero .container {
   padding: 395px 20px 20px;
+  margin: 0;
+  width: 100%;
   background-image: url("../../images/hero-335.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .hero__title {
@@ -481,37 +574,31 @@ input:hover {
 .products__radio {
   display: flex;
   gap: 13px;
-  width: 236px;
-  height: 13px;
   margin: 0 auto;
-}
-
-.radio__wrap {
-  position: relative;
-  display: flex;
+  width: 236px;
 }
 
 .radio__btn {
   margin: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
 }
 
 .radio__bullet {
-  position: absolute;
   width: 13px;
   height: 13px;
   pointer-events: none;
-  border-radius: 6.5px;
+  border-radius: 50%;
   background-color: rgba(17, 17, 17, 0.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.radio__btn:checked {
-  width: 28px;
-}
 .radio__btn:checked + .radio__bullet {
-  width: 100%;
+  width: 28px;
   background-color: #FD9222;
+  border-radius: 6.5px;
 }
 
 .popular .container {
@@ -766,6 +853,12 @@ input:hover {
   letter-spacing: -0.28px;
 }
 
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .nav__item {
   color: #FFFFFF;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -774,10 +867,6 @@ input:hover {
 .nav__item:hover,
 .nav__item:focus {
   color: #FD9222;
-}
-
-.nav__item:not(:last-child) {
-  margin-bottom: 18px;
 }
 
 .mobile-menu {
@@ -796,8 +885,8 @@ input:hover {
   top: 136px;
   left: 50px;
 }
-.mobile-menu .nav__item:not(:last-child) {
-  margin-bottom: 24px;
+.mobile-menu .nav__list {
+  gap: 24px;
 }
 .mobile-menu .socials {
   position: absolute;
