@@ -293,14 +293,88 @@
                 <ul class="products__list">
                     <li class="product">
                         <article>
-                            <img src="./images/product1-230.jpg" alt="First product" class="product__image">
+                            <picture>
+                                <source srcset="./images/product1-230.webp 1x, ./images/product1-230@2x.webp 2x" 
+                                type="image/webp" />
+
+                                <source srcset="./images/product1-230.jpg 1x, ./images/product1-230@2x.jpg 2x" 
+                                type="image/jpeg" />
+
+                                <img 
+                                src="./images/product1-230.jpg" 
+                                alt="Десктопні product" 
+                                width="230px" 
+                                height="200px" />
+                            </picture>
+                            <h3 class="product__name">Orange</h3>
+                            <p class="product__desc">Dark chocolate</p>
+                            <span class="product__price">45 UAH</span>
+                        </article>
+                    </li>
+
+                    <li class="product">
+                        <article>
+                            <picture>
+                                <source srcset="./images/product2-230.webp 1x, ./images/product2-230@2x.webp 2x" 
+                                type="image/webp" />
+
+                                <source srcset="./images/product2-230.jpg 1x, ./images/product2-230@2x.jpg 2x" 
+                                type="image/jpeg" />
+
+                                <img 
+                                src="./images/product2-230.jpg" 
+                                alt="First product" 
+                                width="230px" 
+                                height="200px" />
+                            </picture>
+                            <h3 class="product__name">Orange</h3>
+                            <p class="product__desc">Dark chocolate</p>
+                            <span class="product__price">45 UAH</span>
+                        </article>
+                    </li>
+
+                    <li class="product">
+                        <article>
+                            <picture>
+                                <source srcset="./images/product3-230.webp 1x, ./images/product3-230@2x.webp 2x" 
+                                type="image/webp" />
+
+                                <source srcset="./images/product3-230.jpg 1x, ./images/product3-230@2x.jpg 2x" 
+                                type="image/jpeg" />
+
+                                <img src="./images/product3-230.jpg" 
+                                alt="Second product" 
+                                width="230px" 
+                                height="200px" />
+                            </picture>
+                            <h3 class="product__name">Orange</h3>
+                            <p class="product__desc">Dark chocolate</p>
+                            <span class="product__price">45 UAH</span>
+                        </article>
+                    </li>
+
+                    <li class="product">
+                        <article>
+                            <picture>
+                                <source srcset="./images/product4-230.webp 1x, ./images/product4-230@2x.webp 2x" 
+                                type="image/webp" />
+
+                                <source srcset="./images/product4-230.jpg 1x, ./images/product4-230@2x.jpg 2x" 
+                                type="image/jpeg" />
+
+                                <img 
+                                src="./images/product4-230.jpg" 
+                                alt="Десктопні product" 
+                                width="230px" 
+                                height="200px" />
+                            </picture>
                             <h3 class="product__name">Orange</h3>
                             <p class="product__desc">Dark chocolate</p>
                             <span class="product__price">45 UAH</span>
                         </article>
                     </li>
                 </ul>
-                
+
                 <form class="products__radio">
                     <label class="radio__wrap">
                         <input type="radio" name="product" value="first" class="radio__btn" checked/>
