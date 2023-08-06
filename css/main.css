@@ -452,9 +452,50 @@ input:hover {
 .features .container {
   padding: 20px;
 }
+@media screen and (min-width: 768px) {
+  .features .container {
+    padding: 50px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features .container {
+    padding: 50px;
+  }
+}
 
-.features__item:not(:last-child) {
-  margin-bottom: 20px;
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+}
+
+.features__item {
+  padding-right: 28px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 140px) / 3);
+  }
+  .features__item:not(:last-child) {
+    padding-right: 18px;
+  }
 }
 
 .features__icon {
@@ -473,6 +514,10 @@ input:hover {
   font-size: 18px;
   font-weight: 600;
   color: #FFFFFF;
+}
+
+.features__title--last {
+  letter-spacing: 0.18px;
 }
 
 .features__desc {
