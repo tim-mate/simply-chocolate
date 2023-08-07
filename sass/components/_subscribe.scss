@@ -6,8 +6,46 @@
 
     background-color: $secondaryBackgroundColor;
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+            background-image: url('../../images/subscribe-375@2x.jpg');
+    }
+    
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 1),
+    screen and (min-width: 768px) and (min-resolution: 96dpi),
+    screen and (min-width: 768px) and (min-resolution: 1dppx) {
+        background-image: url('../../images/subscribe-768.jpg');
+    }
+
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        background-image: url('../../images/subscribe-768@2x.jpg');
+    }
+
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
+    screen and (min-width: 1200px) and (min-resolution: 96dpi),
+    screen and (min-width: 1200px) and (min-resolution: 1dppx) {
+        background-image: url('../../images/subscribe-1200.jpg');
+    }
+
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+        background-image: url('../../images/subscribe-1200@2x.jpg');
+    }
+
     .container {
-        padding: 62px 20px 63px;
+        padding: 62px 20px;
+
+        @media screen and (min-width: 768px) { 
+            padding: 72px 150px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 72px 366px;
+        }
     }
 }
 
@@ -24,6 +62,11 @@
     text-transform: uppercase;
 
     color: $secondaryTextColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        letter-spacing: -0.72px;   
+    }
 }
 
 .subscribe__text { 
@@ -52,6 +95,13 @@
     background-color: $accentColor;
 
     transition: color 250ms $timingFunction, background-color 250ms $timingFunction;
+
+    @media screen and (min-width: 768px) {
+        width: 172px;
+        height: 50px;
+
+        font-size: 18px;
+    }
 }
 
 .subscribe__btn:hover,

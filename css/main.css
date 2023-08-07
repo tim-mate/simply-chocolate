@@ -1127,8 +1127,43 @@ input:hover {
   background-size: cover;
   background-color: #1E1823;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url("../../images/subscribe-375@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
+  .subscribe {
+    background-image: url("../../images/subscribe-768.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url("../../images/subscribe-768@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (min-resolution: 96dpi), screen and (min-width: 1200px) and (min-resolution: 1dppx) {
+  .subscribe {
+    background-image: url("../../images/subscribe-1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url("../../images/subscribe-1200@2x.jpg");
+  }
+}
 .subscribe .container {
-  padding: 62px 20px 63px;
+  padding: 62px 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe .container {
+    padding: 72px 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe .container {
+    padding: 72px 366px;
+  }
 }
 
 .subscribe__title {
@@ -1142,6 +1177,12 @@ input:hover {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
 }
 
 .subscribe__text {
@@ -1165,6 +1206,13 @@ input:hover {
   color: #FFFFFF;
   background-color: #FD9222;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .subscribe__btn {
+    width: 172px;
+    height: 50px;
+    font-size: 18px;
+  }
 }
 
 .subscribe__btn:hover,
