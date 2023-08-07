@@ -431,13 +431,99 @@
         <section id="popular" class="popular">
             <div class="container">
                 <h2 class="popular__title"><span class="title__accent">Top</span> sellers</h2>
-                <img src="./images/offer1-335.jpg" alt="top seller" class="popular__image">
-                <p class="popular__text">
-                    Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
-                    thousands of years and was first discovered by the Native American tribe called the Mayans.
-                </p>
-                <img src="./images/offer2-335.jpg" alt="top seller" class="popular__image">
-                <button class="interaction__buy">Buy now</button>
+
+                <div class="content-mobile">
+                    <img 
+                        srcset="./images/offer1-335.jpg 335w,
+                                ./images/offer1-335@2x.jpg 670w,
+                                ./images/offer1-344.jpg 344w,
+                                ./images/offer1-344@2x.jpg 688w, 
+                                ./images/offer1-368.jpg 368w,
+                                ./images/offer1-368@2x.jpg 736w
+                        " 
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                        src="./images/offer1-335.jpg"
+                        alt="top seller" 
+                        class="popular__image" />
+                    
+                    <p class="popular__text">
+                        Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
+                        thousands of years and was first discovered by the Native American tribe called the Mayans.
+                    </p>
+                    
+                    <img 
+                        srcset="./images/offer2-335.jpg 335w,
+                        ./images/offer2-335@2x.jpg 670w,
+                        ./images/offer2-344.jpg 344w,
+                        ./images/offer2-344@2x.jpg 688w, 
+                        ./images/offer2-368.jpg 368w,
+                        ./images/offer2-368@2x.jpg 736w
+                        " 
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                        src="./images/offer2-335.jpg"
+                        alt="top seller" 
+                        class="popular__image" />
+
+                        <button class="interaction__buy">Buy now</button>
+                </div>
+
+                <div class="content-main">
+                    <ul class="popular__list">
+                        <li class="popular__item">
+                            <img 
+                                srcset="./images/offer1-335.jpg 335w,
+                                        ./images/offer1-335@2x.jpg 670w,
+                                        ./images/offer1-344.jpg 344w,
+                                        ./images/offer1-344@2x.jpg 688w, 
+                                        ./images/offer1-368.jpg 368w,
+                                        ./images/offer1-368@2x.jpg 736w
+                                " 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                src="./images/offer1-335.jpg"
+                                alt="top seller" 
+                                class="popular__image" 
+                            />
+                        </li>
+
+                        <li class="popular__item">
+                            <img 
+                                srcset="./images/offer2-335.jpg 335w,
+                                ./images/offer2-335@2x.jpg 670w,
+                                ./images/offer2-344.jpg 344w,
+                                ./images/offer2-344@2x.jpg 688w, 
+                                ./images/offer2-368.jpg 368w,
+                                ./images/offer2-368@2x.jpg 736w
+                                " 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                src="./images/offer2-335.jpg"
+                                alt="top seller" 
+                                class="popular__image" 
+                            />
+                        </li>
+                            
+                        <li class="popular__item popular__item--third">
+                            <img 
+                                srcset="
+                                ./images/offer3-368.jpg 368w,
+                                ./images/offer3-368@2x.jpg 736w
+                                " 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
+                                src="./images/offer3-335.jpg"
+                                alt="top seller" 
+                                class="popular__image" 
+                            />
+                        </li>
+                    </ul>
+                    
+                    <div class="text-buy-container">
+                        <p class="popular__text">
+                            Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
+                            thousands of years and was first discovered by the Native American tribe called the Mayans.
+                        </p>
+                        
+                        <button class="interaction__buy">Buy now</button>
+                    </div>
+                </div>
             </div> 
         </section>
 
