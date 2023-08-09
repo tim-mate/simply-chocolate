@@ -1,0 +1,322 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+
+    transition: opacity 250ms $timingFunction;
+}
+
+.backdrop--hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    .modal {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 311px;
+    padding: 32px 24px;
+    max-height: 80%;
+    overflow-y: auto;
+
+    background-color: $mainBackgroundColor;
+    border-radius: 15px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transition: transform 250ms $timingFunction;
+
+    @media screen and (min-width: 768px) {
+        width: 609px;
+        padding: 48px;
+    }
+}
+
+.modal__btn {
+    position: absolute;
+    top: 0;
+    right: 0;   
+    transform: translate(-14px, 14px);
+
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    background-color: transparent;
+}
+
+.modal__close {
+    stroke: black;
+}
+
+.modal__title {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        letter-spacing: -0.72px;
+    }
+}
+
+.orders__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+}
+
+.orders__item {
+    width: 100%;
+    padding: 8px 16px;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    background-color: $elementBackgroundColor;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 16px * 2) / 3);
+        padding: 24px 20px 18px;
+    }
+}
+
+.order {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        
+    }
+} 
+
+.order__img {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+    }
+}
+
+.order__price {
+    width: 72px;
+    height: 30px;
+    margin-left: auto;
+    padding: 6px 16px;
+
+    font-size: 14px;
+    font-weight: 600;
+    
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    color: $mainTextColor;
+    background-color: $mainBackgroundColor;
+
+    @media screen and (min-width: 768px) {
+        width: 96px;
+        height: 32px;
+        margin: 0 auto;
+        padding: 8px 27px;
+    }
+}
+
+.form__item {
+    margin-bottom: 18px;
+}
+
+.person-thumb {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 22px;
+    }
+}
+
+.form__label,
+.phone__label {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.24px;  
+
+    color: $labelTextColor;
+}
+
+.form__input {
+    width: 100%;
+    padding: 14px 18px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+
+    @media screen and (min-width: 768px) {
+        padding: 22px 24px;
+    }
+}
+
+input:focus-within,
+textarea:focus-within,
+.phone__field:focus-within .phone__clue,
+.phone__field:focus-within .phone__input {
+    outline: 2px solid $accentColor;
+}
+
+.form__input--first {
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    resize: none;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+
+    @media screen and (min-width: 768px) {
+        padding: 22px 24px;
+    }
+}
+
+.modal__submit {
+    padding: 12px 28px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border: 0;
+    border-radius: 100px;
+    color: $secondaryTextColor;
+    background-color: $accentColor;
+
+    transition: color 250ms $timingFunction,
+                background-color 250ms $timingFunction;
+
+                @media screen and (min-width: 768px) {
+                    padding: 14px 40px;
+                }
+}
+
+.modal__submit:hover,
+.modal__submit:focus {
+    color: $accentColor;
+    background-color: $interactionColor;
+}
+
+.phone__field {
+    display: flex;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+.phone__clue {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 35%;
+    padding: 14px 0 14px 18px;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    color: $labelTextColor;
+    background-color: $elementBackgroundColor;
+
+    @media screen and (min-width: 768px) {
+        padding: 17px 0 17px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+}
+
+.phone__clue::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: inline-block;
+
+    height: 25px;
+    width: 1.5px;
+
+    background-color: rgba(17, 17, 17, 0.05);
+
+    @media screen and (min-width: 768px) {
+        height: 32px;
+    }
+}
+
+.phone__input {
+    width: 65%;
+    padding: 14px 18px 14px 14px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-left: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    @media screen and (min-width: 768px) {
+        padding: 17px 24px 17px 28px;
+    }
+}
+
+.card {
+    position: relative;
+}
+
+.card__icon {
+    position: absolute;
+    right: 0;
+
+    transform: translate(-14px, 14px);
+
+    @media screen and (min-width: 768px) {
+        transform: translate(-24px, 20px);
+    }
+}
+

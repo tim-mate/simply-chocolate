@@ -98,7 +98,7 @@
 
                 <ul class="interaction">
                     <li>
-                        <button class="interaction__buy">Buy now</button>
+                        <button class="interaction__buy" data-modal-open>Buy now</button>
                     </li>
 
                     <li>
@@ -744,11 +744,136 @@
         </ul>
     </div>
 
+    <!-- Modal -->
+    <div class="backdrop backdrop--hidden" data-modal>
+        <div class="modal">
+            <button class="modal__btn" data-modal-close>
+                <svg width="28px" height="28px" class="modal__close">
+                    <use href="./images/icons.svg#close-28"></use>
+                </svg>
+            </button>
+
+            <h2 class="modal__title"><span class="title__accent">Buy</span> now</h2>
+   
+            <ul class="orders__list">
+                <li class="orders__item">
+                    <article class="order">
+                        <img srcset="
+                                ./images/order1-84.png 84w,     
+                                ./images/order1-84@2x.png 168w,
+                                ./images/order1-120.png 120w, 
+                                ./images/order1-120@2x.png 240w
+                            "
+                            sizes="33vw" 
+                            src="./images/order1-84.png"
+                            alt="First order" 
+                            class="order__img"
+                        />
+
+                            <span class="order__price">100 g</span>
+                    </article>
+                </li>
+
+                <li class="orders__item">
+                    <article class="order">
+                        <img srcset="
+                                ./images/order2-84.png 84w,     
+                                ./images/order2-84@2x.png 168w,
+                                ./images/order2-120.png 120w, 
+                                ./images/order2-120@2x.png 240w
+                            " 
+                            sizes="33vw" 
+                            src="./images/order2-84.png" 
+                            alt="Second order" 
+                            class="order__img"
+                        />
+                
+                        <span class="order__price">100 g</span>
+                    </article>
+                </li>
+
+                <li class="orders__item">
+                    <article class="order">
+                        <img srcset="
+                                ./images/order3-84.png 84w,     
+                                ./images/order3-84@2x.png 168w,
+                                ./images/order3-120.png 120w, 
+                                ./images/order3-120@2x.png 240w
+                            " 
+                            sizes="33vw" 
+                            src="./images/order3-84.png" 
+                            alt="First order" 
+                            class="order__img"
+                        />
+                
+                        <span class="order__price">100 g</span>
+                    </article>
+                </li>
+            </ul>
+    
+            <form action="" class="modal__form">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label>
+                            <span class="form__label">Personal information</span>
+                            <div class="person-thumb">
+                                <input type="text" name="firstName" class="form__input form__input--first" placeholder="Name">
+                                <input type="text" name="lastName" class="form__input" placeholder="Surname">
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="form__item">
+                        <label>
+                            <span class="form__label">Email</span>
+                            <input type="email" name="email" class="form__input" placeholder="Enter your email">
+                        </label>
+                    </li>
+
+                    <li class="form__item">
+                        <label class="phone">
+                            <span class="phone__label">Phone number</span>
+                            <div class="phone__field">
+                                <span class="phone__clue">
+                                    <svg width="24px" height="18px">
+                                        <use href="./images/icons.svg#ua-24"></use>
+                                    </svg>
+                                    +380
+                                </span>
+                                <input type="tel" name="tel" class="phone__input" placeholder="Phone number">
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="form__item">
+                        <label class="card">
+                            <span class="form__label">Card number</span>
+                            <input type="number" name="card" class="form__input" placeholder="Enter card">
+                            <svg width="32px" height="21px" class="card__icon">
+                                <use href="./images/icons.svg#mastercard-32"></use>
+                            </svg>
+                        </label>
+                    </li>
+
+                    <li class="form__item">
+                        <label>
+                            <span class="form__label">Comment</span>
+                            <textarea name="comment" rows="4" placeholder="Enter text" class="form__textarea"></textarea>
+                        </label>
+                    </li>
+                </ul>
+            </form>
+
+                <button type="submit" class="modal__submit">Submit</button>
+        </div>
+    </div>
+
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
