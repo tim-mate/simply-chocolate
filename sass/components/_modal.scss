@@ -69,8 +69,14 @@
 }
 
 .modal__close {
-    stroke: black;
+    stroke: $mainTextColor;
+    transition: stroke 250ms $timingFunction;
 }
+
+.modal__close:hover,
+.modal__close:focus {
+    stroke: $accentColor;
+} 
 
 .modal__close--24 {
     @media screen and (min-width: 768px) {
@@ -93,7 +99,6 @@
     letter-spacing: -0.6px;
     text-align: center;
     text-transform: uppercase;
-
 
     @media screen and (min-width: 768px) {
         font-size: 24px;
@@ -130,13 +135,16 @@
     }
 }
 
+.orders__item:hover {
+    cursor: pointer;
+}
+
 .order {
     display: flex;
     align-items: center;
 
     @media screen and (min-width: 768px) {
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 } 
 
@@ -274,6 +282,11 @@ textarea:focus-within,
 .phone__field {
     display: flex;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+.phone__field:hover, 
+.card {
+    cursor: pointer;
 }
 
 .phone__clue {

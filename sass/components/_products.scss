@@ -46,7 +46,6 @@
 
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
-
     background-color: $elementBackgroundColor;
 
     @media screen  and (min-width: 768px) {
@@ -56,6 +55,10 @@
     @media screen and (min-width: 1200px) {
         width: calc((100% - 18px * 3) / 4);
     }
+}
+
+.product:hover {
+    cursor: pointer;
 }
 
 .product__image {
@@ -113,12 +116,19 @@
     }
 }
 
+.products__radio:hover,
+.radio__wrap:hover {
+    cursor: pointer;
+}
+
 .radio__btn {
     margin: 0;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     position: absolute;
+    
 }
-
 
 .radio__bullet {
     width: 13px;    

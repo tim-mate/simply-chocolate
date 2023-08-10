@@ -71,6 +71,18 @@
     border-radius: 15px;
 }
 
+.popular__image--basic {
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.popular__image--desktop {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .popular__text {
     font-size: 14px;
     line-height: 1.3;

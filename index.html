@@ -198,7 +198,7 @@
                                     ./images/ingredient1-206@2x.png 412w,
                                     ./images/ingredient1-224.png 224w, 
                                     ./images/ingredient1-224@2x.png 448w"
-                            sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100vw" 
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
                             src="./images/ingredient1-224.png"
                             alt="First ingredient" 
                             class="ingredient__img"/> 
@@ -210,7 +210,7 @@
                                     ./images/ingredient2-206@2x.png 412w,
                                     ./images/ingredient2-224.png 224w, 
                                     ./images/ingredient2-224@2x.png 448w"
-                            sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100vw" 
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
                             src="./images/ingredient2-224.png"
                             alt="Second ingredient" 
                             class="ingredient__img"/>
@@ -222,7 +222,7 @@
                                     ./images/ingredient3-206@2x.png 412w,
                                     ./images/ingredient3-224.png 224w, 
                                     ./images/ingredient3-224@2x.png 448w"
-                            sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100vw" 
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
                             src="./images/ingredient3-224.png"
                             alt="Third ingredient" 
                             class="ingredient__img"/>
@@ -234,7 +234,7 @@
                                     ./images/ingredient4-206@2x.png 412w,
                                     ./images/ingredient4-224.png 224w, 
                                     ./images/ingredient4-224@2x.png 448w"
-                            sizes="(min-width: 1200px) 25w, (min-width: 768px) 50w, 100vw" 
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" 
                             src="./images/ingredient4-224.png"
                             alt="Fourth ingredient" 
                             class="ingredient__img"/>
@@ -248,9 +248,10 @@
         <section id="production" class="production">
             <div class="container">
                 <h2 class="production__title">How it’s <span class="title__accent">made?</span></h2>
-        
+     
                 <article class="recipe">
                     <h3 class="recipe__title">Try our chocolates today and discover the perfect balance of flavor</h3>
+
                     <ul class="recipe__instructions">
                         <li class="instructions-step">
                             <p>
@@ -305,8 +306,8 @@
                                 <img 
                                 src="./images/product1-230.jpg" 
                                 alt="Десктопні product" 
-                                width="230px" 
-                                height="200px" />
+                                width="230" 
+                                height="200" />
                             </picture>
                             <h3 class="product__name">Orange</h3>
                             <p class="product__desc">Dark chocolate</p>
@@ -326,8 +327,8 @@
                                 <img 
                                 src="./images/product2-230.jpg" 
                                 alt="First product" 
-                                width="230px" 
-                                height="200px" />
+                                width="230" 
+                                height="200" />
                             </picture>
                             <h3 class="product__name">Orange</h3>
                             <p class="product__desc">Dark chocolate</p>
@@ -346,8 +347,8 @@
 
                                 <img src="./images/product3-230.jpg" 
                                 alt="Second product" 
-                                width="230px" 
-                                height="200px" />
+                                width="230" 
+                                height="200" />
                             </picture>
                             <h3 class="product__name">Orange</h3>
                             <p class="product__desc">Dark chocolate</p>
@@ -367,8 +368,8 @@
                                 <img 
                                 src="./images/product4-230.jpg" 
                                 alt="Десктопні product" 
-                                width="230px" 
-                                height="200px" />
+                                width="230" 
+                                height="200" />
                             </picture>
                             <h3 class="product__name">Orange</h3>
                             <p class="product__desc">Dark chocolate</p>
@@ -483,8 +484,17 @@
                                 sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
                                 src="./images/offer1-335.jpg"
                                 alt="top seller" 
-                                class="popular__image" 
+                                class="popular__image popular__image--basic" 
                             />
+
+                            <img srcset="
+                                ./images/offer1-368.jpg 368w,
+                                ./images/offer1-368@2x.jpg 736w
+                                " 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/offer1-335.jpg" 
+                                alt="top seller" 
+                                class="popular__image popular__image--desktop" />
                         </li>
 
                         <li class="popular__item">
@@ -499,8 +509,17 @@
                                 sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
                                 src="./images/offer2-335.jpg"
                                 alt="top seller" 
-                                class="popular__image" 
+                                class="popular__image popular__image--basic" 
                             />
+
+                            <img srcset="
+                                ./images/offer2-368.jpg 368w,
+                                ./images/offer2-368@2x.jpg 736w
+                                "
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/offer2-335.jpg" 
+                                alt="top seller" 
+                                class="popular__image popular__image--desktop" />
                         </li>
                             
                         <li class="popular__item popular__item--third">
@@ -509,8 +528,8 @@
                                 ./images/offer3-368.jpg 368w,
                                 ./images/offer3-368@2x.jpg 736w
                                 " 
-                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" 
-                                src="./images/offer3-335.jpg"
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/offer3-368.jpg"
                                 alt="top seller" 
                                 class="popular__image" 
                             />
@@ -540,7 +559,7 @@
                             <picture class="review__userpic">
                                 <source srcset="./images/review1-80.webp 1x, ./images/review1-80@2x.webp 2x" type="image/webp" />
                                 <source srcset="./images/review1-80.jpg 1x, ./images/review1-80@2x.jpg 2x" type="image/jpeg" />
-                                <img src="./images/review1-80.jpg" alt="First review" width="80px" height="80px" />
+                                <img src="./images/review1-80.jpg" alt="First review" width="80" height="80" />
                             </picture>
                             <h3 class="review__name">Victoria Dobrzhanska</h3>
                             <p class="review__text">
@@ -554,7 +573,7 @@
                             <picture class="review__userpic">
                                 <source srcset="./images/review2-80.webp 1x, ./images/review2-80@2x.webp 2x" type="image/webp" />
                                 <source srcset="./images/review2-80.jpg 1x, ./images/review2-80@2x.jpg 2x" type="image/jpeg" />
-                                <img src="./images/review2-80.jpg" alt="First review" width="80px" height="80px" />
+                                <img src="./images/review2-80.jpg" alt="First review" width="80" height="80" />
                             </picture>
                             <h3 class="review__name">Danilo Nottingham</h3>
                             <p class="review__text">
@@ -569,7 +588,7 @@
                             <picture class="review__userpic">
                                 <source srcset="./images/review3-80.webp 1x, ./images/review3-80@2x.webp 2x" type="image/webp" />
                                 <source srcset="./images/review3-80.jpg 1x, ./images/review3-80@2x.jpg 2x" type="image/jpeg" />
-                                <img src="./images/review3-80.jpg" alt="First review" width="80px" height="80px" />
+                                <img src="./images/review3-80.jpg" alt="First review" width="80" height="80" />
                             </picture>
                             <h3 class="review__name">Irina Tydnyuk</h3>
                             <p class="review__text">
@@ -586,18 +605,15 @@
                         <span class="radio__bullet"></span>
                     </label>
                 
-                
                     <label class="radio__wrap">
                         <input type="radio" name="review" value="second" class="radio__btn" />
                         <span class="radio__bullet"></span>
                     </label>
                 
-                
                     <label class="radio__wrap">
                         <input type="radio" name="review" value="third" class="radio__btn" />
                         <span class="radio__bullet"></span>
                     </label>
-                
                 
                     <label class="radio__wrap">
                         <input type="radio" name="review" value="fourth" class="radio__btn" />
@@ -837,7 +853,7 @@
                 </li>
             </ul>
     
-            <form action="" class="modal__form">
+            <form class="modal__form">
                 <ul class="form__list">
                     <li class="form__item">
                         <label>
