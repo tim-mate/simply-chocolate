@@ -50,8 +50,8 @@
     right: 0;   
     transform: translate(-14px, 14px);
 
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     margin: 0;
     padding: 0;
 
@@ -61,10 +61,27 @@
 
     border: 0;
     background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .modal__close {
     stroke: black;
+}
+
+.modal__close--24 {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.modal__close--28 {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .modal__title {
@@ -187,6 +204,18 @@
     }
 }
 
+.card__icon--32 {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.card__icon--44 {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 input:focus-within,
 textarea:focus-within,
 .phone__field:focus-within .phone__clue,
@@ -288,6 +317,18 @@ textarea:focus-within,
 
     @media screen and (min-width: 768px) {
         height: 32px;
+    }
+}
+
+.phone__icon--24 {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.phone__icon--32 {
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 

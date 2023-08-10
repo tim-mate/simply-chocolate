@@ -32,14 +32,14 @@
     stroke: $mainTextColor;
 }
 
-.mobile-menu__open--28 {
+.open__icon--28 {
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.mobile-menu__open--32 {
-    @media screen and (max-width: 767px), screen and (min-width: 1200px) {
+.open__icon--32 {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
@@ -80,4 +80,3 @@
         
     }
 }
-

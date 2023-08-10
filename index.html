@@ -73,14 +73,12 @@
                 </address>
             </div>
             
-            <button class="js-open-menu mobile-menu__open mobile-menu__open--28">
-                <svg width="28px" height="28px" class="open__icon">
+            <button class="js-open-menu mobile-menu__open">
+                <svg width="28px" height="28px" class="open__icon open__icon--28">
                     <use href="./images/icons.svg#menu-28"></use>
                 </svg>
-            </button>
 
-            <button class="js-open-menu mobile-menu__open mobile-menu__open--32">
-                <svg width="32px" height="32px" class="open__icon">
+                <svg width="32px" height="32px" class="open__icon open__icon--32">
                     <use href="./images/icons.svg#menu-32"></use>
                 </svg>
             </button>
@@ -108,9 +106,13 @@
                     <li class="interaction__scroll">
                         <a href="#footer" class="scroll__anchor">
                             scroll down
-                            <div class="scroll__icon">
-                                <svg width="16px" height="16px">
+                            <div class="scroll__circle">
+                                <svg width="16px" height="16px" class="scroll__icon scroll__icon--16">
                                     <use href="./images/icons.svg#down-16"></use>
+                                </svg>
+
+                                <svg width="22px" height="22px" class="scroll__icon scroll__icon--22">
+                                    <use href="./images/icons.svg#down-22"></use>
                                 </svg>
                             </div>
                         </a>
@@ -639,15 +641,23 @@
                         <ul class="socials">
                             <li class="socials__item">
                                 <a href="">
-                                    <svg width="22px" height="22px" class="socials__icon">
+                                    <svg width="22px" height="22px" class="socials__icon socials__icon--22">
                                         <use href="./images/icons.svg#instagram-22"></use>
+                                    </svg>
+
+                                    <svg width="24px" height="24px" class="socials__icon socials__icon--24">
+                                        <use href="./images/icons.svg#instagram-24"></use>
                                     </svg>
                                 </a>
                             </li>
                 
                             <li class="socials__item">
                                 <a href="">
-                                    <svg width="22px" height="22px" class="socials__icon">
+                                    <svg width="22px" height="22px" class="socials__icon socials__icon--22">
+                                        <use href="./images/icons.svg#twitter-22"></use>
+                                    </svg>
+
+                                    <svg width="24px" height="24px" class="socials__icon socials__icon--24">
                                         <use href="./images/icons.svg#twitter-24"></use>
                                     </svg>
                                 </a>
@@ -696,8 +706,12 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button class="mobile-menu__close js-close-menu">
-            <svg width="28px" height="28px" class="close__icon">
+            <svg width="28px" height="28px" class="close__icon close__icon--28">
                 <use href="./images/icons.svg#close-28"></use>
+            </svg>
+
+            <svg width="32px" height="32px" class="close__icon close__icon--32">
+                <use href="./images/icons.svg#close-32"></use>
             </svg>
         </button>
 
@@ -728,16 +742,24 @@
         <ul class="socials">
             <li class="socials__item">
                 <a href="">
-                    <svg width="22px" height="22px" class="socials__icon">
+                    <svg width="22px" height="22px" class="socials__icon socials__icon--22">
                         <use href="./images/icons.svg#instagram-22"></use>
+                    </svg>
+
+                    <svg width="24px" height="24px" class="socials__icon socials__icon--24">
+                        <use href="./images/icons.svg#instagram-24"></use>
                     </svg>
                 </a>
             </li>
         
             <li class="socials__item">
                 <a href="">
-                    <svg width="22px" height="22px" class="socials__icon">
-                        <use href="./images/twitter.svg#twitter"></use>
+                    <svg width="22px" height="22px" class="socials__icon socials__icon--22">
+                        <use href="./images/icons.svg#twitter-22"></use>
+                    </svg>
+
+                    <svg width="24px" height="24px" class="socials__icon socials__icon--24">
+                        <use href="./images/icons.svg#twitter-24"></use>
                     </svg>
                 </a>
             </li>
@@ -748,7 +770,11 @@
     <div class="backdrop backdrop--hidden" data-modal>
         <div class="modal">
             <button class="modal__btn" data-modal-close>
-                <svg width="28px" height="28px" class="modal__close">
+                <svg width="24px" height="24px" class="modal__close modal__close--24">
+                    <use href="./images/icons.svg#close-24"></use>
+                </svg>
+
+                <svg width="28px" height="28px" class="modal__close modal__close--28">
                     <use href="./images/icons.svg#close-28"></use>
                 </svg>
             </button>
@@ -835,8 +861,12 @@
                             <span class="phone__label">Phone number</span>
                             <div class="phone__field">
                                 <span class="phone__clue">
-                                    <svg width="24px" height="18px">
+                                    <svg width="24px" height="18px" class="phone__icon phone__icon--24">
                                         <use href="./images/icons.svg#ua-24"></use>
+                                    </svg>
+
+                                    <svg width="32px" height="24px" class="phone__icon phone__icon--32">
+                                        <use href="./images/icons.svg#ua-32"></use>
                                     </svg>
                                     +380
                                 </span>
@@ -849,8 +879,12 @@
                         <label class="card">
                             <span class="form__label">Card number</span>
                             <input type="number" name="card" class="form__input" placeholder="Enter card">
-                            <svg width="32px" height="21px" class="card__icon">
+                            <svg width="32px" height="21px" class="card__icon card__icon--32">
                                 <use href="./images/icons.svg#mastercard-32"></use>
+                            </svg>
+
+                            <svg width="44px" height="30px" class="card__icon card__icon--44">
+                                <use href="./images/icons.svg#mastercard-44"></use>
                             </svg>
                         </label>
                     </li>

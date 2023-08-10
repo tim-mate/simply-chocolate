@@ -213,7 +213,7 @@
 
 
 
-.scroll__icon {
+.scroll__circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +227,21 @@
     transition: background-color 250ms $timingFunction,
                 fill 250ms $timingFunction;
     
+    @media screen and (min-width: 768px) {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+.scroll__icon--16 {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.scroll__icon--22 {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .scroll__anchor:hover,
@@ -234,7 +249,7 @@
     color: $accentColor;
     background-color: $elementBackgroundColor;
     
-    .scroll__icon {
+    .scroll__circle {
         fill: #FFFFFF;
         background-color: $accentColor;
     }

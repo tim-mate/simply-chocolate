@@ -8,6 +8,25 @@
             padding: 50px 32px;
         }
     }
+
+    .nav {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.28px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 24px;
+        }
+    }
+        
 }
 
 .address-contacts-container {
@@ -143,24 +162,6 @@
     margin-bottom: 4px;
 }
 
-.nav {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.28px; 
-}
-
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        gap: 24px;
-    }
-}
-
 .nav__item {
     color: $secondaryTextColor;
     transition: color 250ms $timingFunction;
@@ -174,3 +175,5 @@
 .nav__item:focus {
     color: $accentColor;
 }
+
+
